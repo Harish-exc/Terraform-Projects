@@ -9,6 +9,12 @@ variable "instance_type" {
     default = "t2.micro"
 }
 
+variable "environment" {
+    type = string
+    description = "Deployment environment"
+    default = "dev"
+}
+
 variable "tags" {
     type = map(string)
     description = "Tags to apply to the EC2  instance"
